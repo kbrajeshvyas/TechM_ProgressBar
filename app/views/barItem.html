@@ -1,0 +1,11 @@
+<div>
+		<span>Progress Bar {{item.barId}} </span>
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" aria-valuenow={{item.value}}
+			aria-valuemin="0" aria-valuemax="setLimit()" ng-class="{{item.value > 80}} ? progress-bar-success : progress-bar-warning">
+			{{item.value}} %
+			</div>
+		</div>
+		<button ng-click="upValue()"> + 5 </button>		
+		<button ng-click="downValue()"> - 5 </button>
+</div>
